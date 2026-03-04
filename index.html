@@ -8,29 +8,29 @@
 </head>
 <body>
     
-    <div class="Calculator">
-         <h2 class="title">Calculator</h2>
-    <input type="text"id="display" placeholder="0">
-    <div class="button">
-        <button class="btn clear">Clear All</button> 
-        <button class="btn backspace">Backspace</button> 
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn operator">/</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn operator">*</button>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn operator">-</button>
-        <button class="btn">0</button>
-        <button class="btn">.</button>
-        <button class="btn equal">=</button>
-        <button class="btn operator">+</button>
-        
+    <div id="Calculator">
+    <input id="display" readonly>
+    <div id="key">
+        <button onclick="clearDisplay()" class="gray" >C</button>
+        <button onclick="appendToDisplay('AC')"  class="gray">AC</button>
+        <button onclick="appendToDisplay('%')"  class="gray">%</button>
+        <button onclick="appendToDisplay('÷')" class="operator" >÷</button>
+        <button onclick="appendToDisplay('7')" >7</button>
+        <button onclick="appendToDisplay('8')" >8</button>
+        <button onclick="appendToDisplay('9')" >9</button>
+        <button onclick="appendToDisplay('*')" class="operator"  >*</button>
+        <button onclick="appendToDisplay('4')" >4</button>
+        <button onclick="appendToDisplay('5')" >5</button>
+        <button onclick="appendToDisplay('6')" >6</button>
+        <button onclick="appendToDisplay('-')"  class="operator" >-</button>
+        <button onclick="appendToDisplay('1')" >1</button>
+        <button onclick="appendToDisplay('2')" >2</button>
+        <button onclick="appendToDisplay('3')" >3</button>
+        <button onclick="appendToDisplay('+')"  class="operator"  >+</button>
+        <button onclick="appendToDisplay('+/-')" >+/-</button>
+        <button onclick="appendToDisplay('0')" >0</button>
+        <button onclick="appendToDisplay('.')" >.</button>
+        <button onclick="calculate()"  class="operator" >=</button> 
       </div>
     </div>
     <script src="script.js"></script>
