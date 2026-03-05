@@ -14,8 +14,9 @@ body{
   font-family: Arial, sans-serif;
   overflow: hidden;
 }
-#display{
+.display{
   width: 100%;
+  height: 80px;
   padding: 20px;
   font-size: 5rem;
   text-align: right;
@@ -23,6 +24,16 @@ body{
   background-color: black;
   color: white;
 }
+#inputLine{
+    font-size:20px;
+    color: hsl(0, 0%, 50%);
+
+  }
+#outputLine{
+    font-size:30px;
+    
+}
+
 #key{
   display: grid;
   grid-template-columns: repeat(4, 1fr);

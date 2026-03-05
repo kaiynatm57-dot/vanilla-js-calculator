@@ -1,28 +1,27 @@
-let FirstInput="";
-let SecondInput="";
-let op="";
+let input="";
 
-const display = document.getElementById('display');
-function appendToDisplay(input) {
-    display.value += input;
-   
+
+function appendToDisplay(value) {
+    input += value;
+    document.getElementById("inputLine").innerText = input;
 }
 
 function clearDisplay() {
-    document.getElementById('display');
-    display.value = display.value.slice(0, -1);
-       
-    
+    document.getElementById('inputLine').innerText = '';
+    input = '';
 }
 //AC button working
 function allclear(){
-    display.value="0"; 
+    document.getElementById('inputLine').innerText = '';
+    document.getElementById('outputLine').innerText = '';
+    input = '';
 }
 
 function calculate() {
     try {
       
-        display.value = eval(display.value);
+        input = eval(input);
+        document.getElementById("outputLine").innerText = input;
         
     } catch (error) {
        
