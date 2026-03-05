@@ -41,8 +41,21 @@ function allclear(){
     document.getElementById('inputLine').innerText = '';
     document.getElementById('outputLine').innerText = '';
     input = '';
-}
 
+}
+function toggleSign() {
+    // If input is empty, do nothing
+    if (input === "") return;
+
+    // If the number starts with '-', remove it; otherwise, add '-'
+    if (input.charAt(0) === "-") {
+        input = input.substring(1);
+    } else {
+        input = "-" + input;
+    }
+
+    updateDisplay();
+}
 function calculate() {
     try {
       
