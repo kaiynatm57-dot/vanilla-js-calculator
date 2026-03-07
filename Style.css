@@ -25,12 +25,13 @@ body{
   color: white;
 }
 #inputLine{
-    font-size:20px;
+    font-size:40px;
     color: hsl(0, 0%, 50%);
 
   }
 #outputLine{
-    font-size:30px;
+    font-size:40px;
+    font-weight: bold;
     
 }
 
