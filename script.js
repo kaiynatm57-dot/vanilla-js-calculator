@@ -54,7 +54,8 @@ function toggleSign() {
         input = "-" + input;
     }
 
-    updateDisplay();
+    //updateDisplay();
+    document.getElementById("inputLine").innerText = input;
 }
 function calculate() {
     try {
@@ -64,6 +65,7 @@ function calculate() {
         
     } catch (error) {
        
-        display.value = 'Error';
+        //display.value = 'Error';
+         document.getElementById("outputLine").innerText = "Error";
     }
 }

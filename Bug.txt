@@ -1,0 +1,8 @@
+There is an error in catch block becuase i use display.value 
+for error but it dose not show error on display
+display.value = 'Error';
+Solution 
+Use the output element instead.
+2. toggle sign 
+i am calling updateDisplay(), but this function does not exist anywhere in the code
+
