@@ -1,3 +1,4 @@
+1.catch block error
 There is an error in catch block becuase i use display.value 
 for error but it dose not show error on display
 display.value = 'Error';
@@ -5,4 +6,9 @@ Solution
 Use the output element instead.
 2. toggle sign 
 i am calling updateDisplay(), but this function does not exist anywhere in the code
-
+3.eval() works but is not safe in large projects.
+4.// Prevent Multiple Decimals (3.4.5)
+there is a problem that it dose not allow . in second exresspration
+   //Add this check before adding ".".
+   //if (value === "." && input.includes(".")) {
+   // return;}

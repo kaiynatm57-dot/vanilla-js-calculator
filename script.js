@@ -22,7 +22,10 @@ function appendToDisplay(value) {
     else if (input === "0" && value !== ".") {
         input = value;
     }
-
+   // Prevent Multiple Decimals (3.4.5)
+   //Add this check before adding ".".
+   //if (value === "." && input.includes(".")) {
+   // return;}
     // normal input
     else {
         input += value;
@@ -33,7 +36,7 @@ function appendToDisplay(value) {
 
 function clearDisplay() {
     input = input.slice(0, -1);
-    document.getElementById('inputLine').innerText = input;
+    document.getElementById('inputLine').innerText = input || '0';
      
 }
 //AC button working
