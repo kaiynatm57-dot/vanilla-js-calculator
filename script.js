@@ -56,18 +56,22 @@ function toggleSign() {
     } else {
         input = "-" + input;
     }
-
+    //toggle sign
+     //i am calling updateDisplay(), but this function does not exist anywhere in the  html code
     //updateDisplay();
     document.getElementById("inputLine").innerText = input;
 }
 function calculate() {
     try {
-      
-        input = eval(input);
+        //3.eval() works but is not safe in large projects.
+        // but it is suitable for beginers
+           input = eval(input);
         document.getElementById("outputLine").innerText = input;
         
     } catch (error) {
-       
+        // catch block error
+//There is an error in catch block becuase i use display.value 
+//for error but it dose not show error on display
         //display.value = 'Error';
          document.getElementById("outputLine").innerText = "Error";
     }
